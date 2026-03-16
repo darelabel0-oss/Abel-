@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ride German | World Class Automotive Excellence</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:#0b0b0b;
+            color:white;
+        }
+
+        header{
+            background:black;
+            padding:20px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+
+        header h1{
+            margin:0;
+            color:gold;
+            letter-spacing:2px;
+        }
+
+        nav a{
+            color:white;
+            margin:15px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:gold;
+        }
+
+        section{
+            padding:50px 20px;
+            text-align:center;
+        }
+
+        .hero{
+            background:url("red-supercar.jpg") center/cover no-repeat;
+            height:80vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .hero h2{
+            background:rgba(0,0,0,0.6);
+            padding:20px;
+            font-size:40px;
+            border-radius:10px;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            padding:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            border-radius:12px;
+            transition:0.4s;
+        }
+
+        .gallery img:hover{
+            transform:scale(1.05);
+        }
+
+        .card{
+            background:#1a1a1a;
+            padding:20px;
+            border-radius:10px;
+            margin:20px auto;
+            width:80%;
+        }
+
+        table{
+            margin:auto;
+            width:80%;
+            border-collapse:collapse;
+            background:#1a1a1a;
+        }
+
+        th, td{
+            border:1px solid gray;
+            padding:12px;
+        }
+
+        th{
+            background:#222;
+        }
+
+        tr:hover{
+            background:#2a2a2a;
+        }
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+            color:gray;
+        }
+
+        button{
+            background:gold;
+            padding:10px 25px;
+            border:none;
+            font-weight:bold;
+            cursor:pointer;
+            border-radius:6px;
+        }
+
+        button:hover{
+            background:white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RIDE GERMAN</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <h2>World Class German Automotive Excellence in Kenya</h2>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <div class="card">
+        <h2>About Ride German</h2>
+        <p>
+            Ride German delivers luxury, performance, and precision engineering
+            directly from Germany to Kenya. We specialize in Mercedes-Benz AMG,
+            BMW M Performance, Audi RS models, Porsche 911, and Volkswagen GTI.
+        </p>
+    </div>
+</section>
+
+<!-- CARS SECTION -->
+<section id="cars">
+    <h2>Our Premium Collection</h2>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery">
+    <h2>German Performance Gallery</h2>
+
+    <div class="gallery">
+        <img src="audi.jpeg" alt="Audi Performance Cars">
+        <img src="audi-a8.jpg" alt="Mercedes AMG GT">
+    </div>
+</section>
+
+<!-- PRICE TABLE -->
+<section>
+    <h2>Luxury Price Guide (KSH)</h2>
+
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Starting Price</th>
+        </tr>
+
+        <tr>
+            <td>Mercedes AMG GT</td>
+            <td>18,500,000</td>
+        </tr>
+
+        <tr>
+            <td>BMW 740i M Sport</td>
+            <td>11,000,000</td>
+        </tr>
+
+        <tr>
+            <td>Audi RS5</td>
+            <td>12,800,000</td>
+        </tr>
+
+        <tr>
+            <td>Porsche 911</td>
+            <td>21,000,000</td>
+        </tr>
+    </table>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Book Your Test Drive</h2>
+    <p>Visit our Nairobi showroom or schedule a private luxury viewing.</p>
+    <button>Book Now</button>
+</section>
+
+<footer>
+    © 2026 Ride German | Bringing German Excellence to Kenya
+</footer>
+
+</body>
+</html>
